@@ -1,0 +1,14 @@
+{% extends "modelo.html" %}
+
+{% block title %}
+    Contatos
+{% endblock title %}    
+
+{% block titulo %}
+    <h1 class="text-4xl text-violet-400 text-center mt-10">Contatos</h1>
+{% endblock titulo %} 
+{% block conteudo %}
+    {% for fruta in frutas %}
+        <p class="text-red-300 text-xl text-center hover:rotate-6">{{ fruta }} </p>
+    {% endfor %}
+{% endblock conteudo %}  

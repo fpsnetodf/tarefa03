@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "nunjucks": "^3.2.4"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch",
+    "server": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "tailwindcss": "^3.4.10"
+  }
+}

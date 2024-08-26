@@ -1,0 +1,13 @@
+
+{% extends "modelo.html" %}
+
+
+{% block title %}
+    <title>Home</title>
+{% endblock title %}
+{% block titulo %}
+    <h1 class="mt-10 text-4xl text-green-400 text-center">Página Home</h1>
+    {% endblock titulo %}
+{% block conteudo %}  
+    <p class="text-center text-violet-400 text-lg">{{ user.nome }} {{ user.lastName }} tem {{ user.age }} anos</p>
+{% endblock conteudo %} 
