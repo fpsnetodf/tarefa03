@@ -20,7 +20,7 @@ app.get("/", (req, res) =>{
     const users = [{
         nome : "John", 
         lastName : "Doe",
-        age: 34
+        age: 35
     }, 
     {
         nome: "Jane",
