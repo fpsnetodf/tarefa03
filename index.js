@@ -17,12 +17,17 @@ nunjucks.configure('templates', {
 app.use(express.static("public"))
 
 app.get("/", (req, res) =>{
-    const user = {
-        nome : "Francisco", 
-        lastName : "da silva",
+    const users = [{
+        nome : "John", 
+        lastName : "Doe",
+        age: 34
+    }, 
+    {
+        nome: "Jane",
+        lastName: 'Doe', 
         age: 30
-    }
-    res.render("home.html", {user})
+    }]
+    res.render("home.html", {users})
 })
 
 app.get("/contatos", (req, res) =>{
